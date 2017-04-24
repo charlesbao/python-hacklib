@@ -551,6 +551,7 @@ def importFromString(code, name):
 
 
 def getIP(host):
+    host = host.replace("https://","").replace("http://","").replace("/","")
     return socket.gethostbyname(host)
 
 
